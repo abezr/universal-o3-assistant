@@ -22,9 +22,9 @@ Each item links to a standalone description file inside `backlog/tasks/`.  A tas
 
 | ID | Title | Status | Detail File |
 |----|-------|--------|-------------|
-| T01 | Project scaffolding (Poetry, FastAPI skeleton, LangGraph base) | TODO | backlog/tasks/T01_project_scaffolding.md |
-| T02 | Core Pydantic data contracts | TODO | backlog/tasks/T02_pydantic_models.md |
-| T03 | Ingestion connector interface + Git connector | TODO | backlog/tasks/T03_ingestion_git.md |
+| T01 | Project scaffolding (Poetry, FastAPI skeleton, LangGraph base) | DONE | backlog/tasks/T01_project_scaffolding.md |
+| T02 | Core Pydantic data contracts | DONE | backlog/tasks/T02_pydantic_models.md |
+| T03 | Ingestion connector interface + Git connector | DONE | backlog/tasks/T03_ingestion_connector_interface_git_connector.md |
 | T04 | Document Normalizer node | TODO | backlog/tasks/T04_normalizer.md |
 | T05 | Embedding & enrichment node | TODO | backlog/tasks/T05_embedding_enricher.md |
 | T06 | Vector store integration (Qdrant/pgvector) | TODO | backlog/tasks/T06_vector_store.md |

@@ -1,6 +1,6 @@
-# Task T03 – Ingestion connector interface + Git connector
+# Task T03 - Ingestion connector interface + Git connector
 
-Status: TODO
+Status: DONE
 
 ## Objective
 Create a generic ingestion connector `BaseConnector` with async `collect()` API and implement a Git connector that scans a repo and yields file contents.
@@ -24,11 +24,13 @@ Create a generic ingestion connector `BaseConnector` with async `collect()` API 
 3. Run pytest
 
 ## Audit Checklist
-- [ ] Code committed
-- [ ] Tests pass locally
-- [ ] Documentation updated
+- [x] Code committed
+- [x] Tests pass locally
+- [x] Documentation updated
 
 
 ---
 ## Post-Implementation Notes
-(To be filled by implementer)
+- Implemented an abstract ``BaseConnector`` contract and a ``GitConnector`` that walks local repositories, skipping ``.git`` contents and supporting include/exclude globs.
+- Added async unit tests covering default traversal and glob filtering behaviors.
+- Documented completion in the backlog and exposed the new ingestion package from the top-level module.

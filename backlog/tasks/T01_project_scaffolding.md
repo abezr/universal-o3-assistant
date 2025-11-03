@@ -1,6 +1,6 @@
 # Task T01 – Project Scaffolding (Poetry, FastAPI skeleton, LangGraph base)
 
-Status: TODO
+Status: DONE
 
 ---
 ## Objective
@@ -36,11 +36,13 @@ Establish the foundational Python project structure required for subsequent task
 6. Run `pytest -k T01`.
 
 ## Audit Checklist
-- [ ] Poetry lockfile generated
-- [ ] All deliverables committed
-- [ ] Tests pass locally
-- [ ] Documentation updated
+- [x] Poetry lockfile generated
+- [x] All deliverables committed
+- [x] Tests pass locally
+- [x] Documentation updated
 
 ---
 ## Post-Implementation Notes
-(To be filled by implementer)
+- Added pytest configuration so the `src` layout resolves packages during testing.
+- Generated `poetry.lock` after updating the supported Python range to `>=3.10,<4.0` for dependency compatibility.
+- Verified FastAPI health endpoint and LangGraph skeleton via `pytest -k T01`.
