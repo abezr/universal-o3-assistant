@@ -1,6 +1,6 @@
 # Task T02 – Core Pydantic Data Contracts
 
-Status: TODO
+Status: DONE
 
 ## Objective
 Define central data models used across the system in `src/uda/models.py`.
@@ -22,3 +22,9 @@ Define central data models used across the system in `src/uda/models.py`.
 1. Create models file.
 2. Add unit tests.
 3. Run pytest.
+
+---
+## Post-Implementation Notes
+- Added `DocChunk`, `RetrievalResult`, and `LLMResponse` models with validation for score ranges and citation identifiers.
+- Created unit tests exercising default behaviors and validation errors under `tests/T02/test_models.py`.
+- Verified contract suite via `pytest -k T02`.

@@ -7,9 +7,9 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.10,<4.0"
 fastapi = "^0.110.0"
-uvicorn = {extras = ["standard"], version = "^0.29.0"}
+uvicorn = { extras = ["standard"], version = "^0.29.0" }
 langgraph = "^0.0.18"
 langchain = "^0.1.16"
 pydantic = "^2.6.4"
@@ -28,6 +28,10 @@ datetime = "^5.5"
 black = "^24.4.0"
 ruff = "^0.3.3"
 pytest = "^8.1.1"
+pytest-asyncio = "^0.23.6"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
 
 [build-system]
 requires = ["poetry-core>=1.7.0"]
